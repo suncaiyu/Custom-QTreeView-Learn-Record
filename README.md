@@ -3,4 +3,6 @@
 
 不想详细写blog了，看代码吧
 （不写blog，不知道以后会不会自己看不懂了，以后看不懂，就是今天太懒~）
+
+包括 自定义model ，sortproxymodel查找子节点 delegate 自绘界面等
 ![image](snap/customtreeview.png)
