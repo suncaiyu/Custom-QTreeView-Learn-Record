@@ -244,8 +244,13 @@ bool MyFilterModel::filterAcceptsRow(int source_row, const QModelIndex & source_
     // 假设搜索第一列
     TreeItem *it = source_parent.data(Qt::UserRole).value<TreeItem *>();
     if (it == nullptr) {
-        QModelIndex idx = sourceModel()->index(source_row, 0, source_parent);
-        return filterAcceptsRow(source_row, idx);
+        QModelIndex idx = sourceModel()->index(source_row, 1, source_parent);
+        TreeItem *it = idx.data(Qt::UserRole).value<TreeItem *>();
+        QString origin = it->mTab;
+        if (origin.contains(str)) {
+            return true;
+        }
+        return false;
     }
     QString origin = it->mTab;
     if (origin.contains(str)) {
