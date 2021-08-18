@@ -39,7 +39,7 @@ void ItemDelegate::paint(QPainter * painter, const QStyleOptionViewItem & option
         if (op.state.testFlag(QStyle::State_Selected)) {
             painter->fillRect(option.rect, COLOR_SELECTED);
         }
-        if (item->childCount() > 0) {
+        if (index.model()->rowCount(index.siblingAtColumn(0)) >  0) {
             DrawTriangle(painter, op, index);
         }
         DrawKeyword(painter, op, index);

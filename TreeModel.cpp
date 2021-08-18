@@ -1,9 +1,10 @@
 
 #include "TreeItem.h"
-#include "treemodel.h"
+#include "TreeModel.h"
 #include <QColor>
 #include <QDateTime>
 #include <QStringList>
+#include <QDebug>
 
 
 TreeModel::TreeModel(QStringList headers, QObject *parent)
@@ -28,7 +29,6 @@ TreeItem *TreeModel::itemFromIndex(const QModelIndex &index) const
 
 QModelIndex TreeModel::indexFromItem(TreeItem *item)
 {
-    QAbstractItemModel;
     TreeItem *tmp = item;
     QVector<TreeItem *>itemVector;
     while (tmp->parentItem() != nullptr) {
@@ -202,18 +202,60 @@ MyFilterModel::~MyFilterModel()
 
 bool MyFilterModel::filterAcceptsRow(int source_row, const QModelIndex & source_parent) const
 {
-    bool filter = QSortFilterProxyModel::filterAcceptsRow(source_row, source_parent);
+    //> 设置可以搜索子节点
+//    bool filter = QSortFilterProxyModel::filterAcceptsRow(source_row, source_parent);
 
-    if (filter) {
-        return true;
-    } else {
-        // check all decendant's
+//    if (filter) {
+//        return true;
+//    } else {
+//        // check all decendant's
+//        QModelIndex source_index = sourceModel()->index(source_row, 0, source_parent);
+//        for (int k = 0; k < sourceModel()->rowCount(source_index); k++) {
+//            if (filterAcceptsRow(k, source_index)) {
+//                return true;
+//            }
+//        }
+//    }
+//    return false;
+
+
+    // >设置可以搜索多列
+//    QString str = this->filterRegExp().pattern();
+//    // 搜索第1和第2列
+//    for (int i = 1; i < 3; ++i) {
+//        QModelIndex idx = sourceModel()->index(source_row, i, source_parent);
+//        QString origin = sourceModel()->data(idx).toString();
+//        if (origin.contains(str)) {
+//            return true;
+//        } else {
+//            QModelIndex source_index = sourceModel()->index(source_row, 0, source_parent);
+//            for (int k = 0; k < sourceModel()->rowCount(source_index); k++) {
+//                if (filterAcceptsRow(k, source_index)) {
+//                    return true;
+//                }
+//            }
+//        }
+//    }
+//    return  false;
+
+    //>只支持搜索第一层，但是要展示符合节点的全部子节点
+    // 方案循环遍历，但是比较的是他们的第一层父节点
+    QString str = this->filterRegExp().pattern();
+    // 假设搜索第一列
+    TreeItem *it = source_parent.data(Qt::UserRole).value<TreeItem *>();
+    if (it == nullptr) {
+        QModelIndex idx = sourceModel()->index(source_row, 0, source_parent);
+        return filterAcceptsRow(source_row, idx);
+    }
+    QString origin = it->mTab;
+    if (origin.contains(str)) {
         QModelIndex source_index = sourceModel()->index(source_row, 0, source_parent);
         for (int k = 0; k < sourceModel()->rowCount(source_index); k++) {
             if (filterAcceptsRow(k, source_index)) {
                 return true;
             }
         }
+        return true;
     }
     return false;
 }

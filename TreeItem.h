@@ -39,6 +39,8 @@ public:
     //修改节点内容(只对有数据的节点可修改，比如姓名、三门课，其他是根据这些内容自动求解的，会自动刷新，但是这里没法改)
     void setData(int column, QVariant value);
 
+    QString mTab; // 记录第一层信息，搜索用
+
 private:
     void setLevel(int level) { mLevel = level; }
     QList<TreeItem*> mChildItems;   //子节点

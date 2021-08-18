@@ -19,6 +19,11 @@ void TreeItem::appendChild(TreeItem *item)
     item->setRow(mChildItems.size());   //item存自己是第几个，可以优化效率
     mChildItems.append(item);
     item->setLevel(mLevel + 1);
+    if (item->mLevel == 1) {
+        item->mTab = item->ItemData()[1].toString();
+    } else {
+        item->mTab = this->mTab;
+    }
 }
 
 void TreeItem::removeChilds()
