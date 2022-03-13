@@ -7,6 +7,7 @@
 #include <QHBoxLayout>
 #include <TreeModel.h>
 #include <QDebug>
+#include <QTextDocument>
 
 namespace {
     constexpr int IDENT = 20;
@@ -23,10 +24,17 @@ ItemDelegate::ItemDelegate(QTreeView *view, QObject * parent)
     setQss();
     m_View->setIndentation(0);
     m_View->setEditTriggers(QAbstractItemView::NoEditTriggers);
+    m_View->setUniformRowHeights(false);
+    connect(m_View->header(), &QHeaderView::sectionResized, this, [](int logicalIndex, int oldSize, int newSize){
+        if (logicalIndex == 2) {
+            qDebug() << newSize;
+        }
+    });
 }
 
 void ItemDelegate::paint(QPainter * painter, const QStyleOptionViewItem & option, const QModelIndex & index) const
 {
+    const_cast<QAbstractItemModel*>(index.model())->setData(index, option.rect.width(), Qt::UserRole+1);
     QStyleOptionViewItem op = option;
     TreeItem *item = index.data(Qt::UserRole).value<TreeItem *>();
     if (index.column() == 1) {
@@ -45,10 +53,22 @@ void ItemDelegate::paint(QPainter * painter, const QStyleOptionViewItem & option
         DrawKeyword(painter, op, index);
         //QStyledItemDelegate::paint(painter, op, index);
     } else {
+        //        if (index.column() == 2) {
+        //            QTextDocument doc;
+        //            painter->save();
+        //            doc.setHtml(item->ItemData()[index.column()].toString());
+        //            doc.setTextWidth(option.rect.width());
+        //            painter->translate(option.rect.x(), option.rect.y());
+        //            doc.drawContents(painter);
+        //            painter->restore();
+        //        } else
         if (index.column() == 3) {
             m_View->openPersistentEditor(index);
+            QStyledItemDelegate::paint(painter, op, index);
+        } else {
+            QStyledItemDelegate::paint(painter, op, index);
         }
-        QStyledItemDelegate::paint(painter, op, index);
+
     }
     painter->drawRect(option.rect);
 }
@@ -56,7 +76,15 @@ void ItemDelegate::paint(QPainter * painter, const QStyleOptionViewItem & option
 QSize ItemDelegate::sizeHint(const QStyleOptionViewItem & option, const QModelIndex & index) const
 {
     Q_UNUSED(index)
-    return QSize(option.rect.width(), LINE_HEIGHT);
+//    return QSize(option.rect.width(), LINE_HEIGHT);
+//    if (m_View->header()->sectionSize(2) < 80) {
+//        qDebug() << "thisxxxx";
+//        return QStyledItemDelegate::sizeHint(option, index);
+//    }
+    if (m_View->currentIndex() == index) {
+        return QStyledItemDelegate::sizeHint(option, index);
+    }
+    return QSize (QStyledItemDelegate::sizeHint(option, index).width(),LINE_HEIGHT);
 }
 
 bool ItemDelegate::editorEvent(QEvent * event, QAbstractItemModel * model, const QStyleOptionViewItem & option, const QModelIndex & index)
@@ -80,9 +108,14 @@ QWidget * ItemDelegate::createEditor(QWidget * parent, const QStyleOptionViewIte
 {
     Q_UNUSED(option)
     QPushButton *b = new QPushButton("777", parent);
-    connect(b, &QPushButton::clicked, this, [this, index]() {
-        TreeItem *item = index.data(Qt::UserRole).value<TreeItem *>();
-        qDebug() << index.row() << "--" << index.column() << "--" << item->ItemData()[1];
+    connect(b, &QPushButton::clicked, this, [b,this, option, index]() {
+        for (int i = 0; i <= index.column(); i++) {
+            // 提醒界面数据刷新了，重新从sizehint获取size大小
+            const_cast<QAbstractItemModel*>(index.model())->dataChanged(index, index);
+            // 界面刷新
+            m_View->doItemsLayout();
+//            m_View->viewport()->update();
+        }
     });
     return b;
 }

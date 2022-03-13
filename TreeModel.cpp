@@ -5,13 +5,14 @@
 #include <QDateTime>
 #include <QStringList>
 #include <QDebug>
-
+#include <QSize>
 
 TreeModel::TreeModel(QStringList headers, QObject *parent)
     : QAbstractItemModel(parent)
 {
     mHeaders = headers;
     mRootItem = new TreeItem;
+    ss = QSize(28, 38);
 }
 
 TreeModel::~TreeModel()
@@ -69,7 +70,11 @@ QVariant TreeModel::data(const QModelIndex &index, int role) const
     TreeItem *item = static_cast<TreeItem *>(index.internalPointer());
     if (role == Qt::UserRole) {
         return QVariant::fromValue<TreeItem *>(item);
-    }
+    } else
+    if (Qt::SizeHintRole == role)
+        {
+            return QVariant(ss);
+        }
     //TreeItem *item = static_cast<TreeItem*>(index.internalPointer());
     else if (role == Qt::DisplayRole) {
         return item->data(index.column());
@@ -121,10 +126,13 @@ bool TreeModel::setData(const QModelIndex &index, const QVariant &value, int rol
     {
         TreeItem *item = static_cast<TreeItem*>(index.internalPointer());
         item->setData(index.column(), value);
-
         emit dataChanged(index, index);
         return true;
-    }
+    }/* else if (index.isValid() && role == Qt::SizeHintRole) {
+        ss = value.toSize();
+        emit dataChanged(index, index);
+        return true;
+    }*/
     return false;
 }
 

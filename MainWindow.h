@@ -11,6 +11,7 @@ class TreeModel;
 class TreeItem;
 class ItemDelegate;
 class MyFilterModel;
+class TreeHead;
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
@@ -35,7 +36,7 @@ private:
     ItemDelegate *mDelegate = nullptr;
     ItemDelegate *mFilterDelegate = nullptr;
     MyFilterModel *mFilterModel = nullptr;
-
+    TreeHead *mHeader;
     void DeletePtr();
 };
 #endif // MAINWINDOW_H

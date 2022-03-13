@@ -6,7 +6,7 @@
 #include <QModelIndex>
 #include <QVariant>
 #include <QSortFilterProxyModel>
-
+#include <QSize>
 class TreeModel : public QAbstractItemModel
 {
     Q_OBJECT
@@ -45,6 +45,7 @@ public:
 private:
     QStringList mHeaders;   // 表头内容
     TreeItem *mRootItem;    // 根节点
+    QSize ss;
 };
 
 class MyFilterModel : public QSortFilterProxyModel

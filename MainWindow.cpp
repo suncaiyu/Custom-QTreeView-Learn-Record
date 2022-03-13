@@ -4,6 +4,7 @@
 #include "TreeItem.h"
 #include "TreeModel.h"
 #include "ItemDelegate.h"
+#include <TreeHead.h>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -26,17 +27,17 @@ void MainWindow::on_pushButton_clicked()
     mModel = new TreeModel(headList, ui->treeView);
     TreeItem *root = mModel->root();
     // 1
-    for (int i = 0; i < 100; i++) {
+    for (int i = 0; i < 10; i++) {
         TreeItem *item1 = new TreeItem(root);
         QVector<QVariant> data1;
-        data1 << i << "api" + QString::number(i) << "first" + QString::number(i) << "";
+        data1 << i << "api" + QString::number(i) << "firstapiapiapiapiapiapiapi" + QString::number(i) << "";
         item1->setItemData(data1);
         root->appendChild(item1);
 
         for (int j = 0; j < 10; j++) {
             TreeItem *item2 = new TreeItem(item1);
             QVector<QVariant> data2;
-            data2 << j << "myapi" + QString::number(i + j) << "second" + QString::number(i + j) << "";
+            data2 << j << "myapi" + QString::number(i + j) << "secondapiapiapiapiapiapiapi" + QString::number(i + j) << "";
             item2->setItemData(data2);
             item1->appendChild(item2);
             if (selected == nullptr && j == 8) {
@@ -45,7 +46,7 @@ void MainWindow::on_pushButton_clicked()
             for (int k = 0; k < 10; k++) {
                 TreeItem *item3 = new TreeItem(item2);
                 QVector<QVariant> data3;
-                data3 << k << "myapi" + QString::number(i + j) << "third" + QString::number(i + j + k) << "";
+                data3 << k << "myapi" + QString::number(i + j) << "thirdapiapiapiapiapiapiapi" + QString::number(i + j + k) << "";
                 item3->setItemData(data3);
                 item2->appendChild(item3);
             }
@@ -60,6 +61,7 @@ void MainWindow::on_pushButton_clicked()
     mFilterDelegate = new ItemDelegate(ui->treeView_2);
     ui->treeView->setItemDelegate(mDelegate);
     ui->treeView_2->setItemDelegate(mFilterDelegate);
+    ui->treeView_2->setWordWrap(true);
 }
 
 
@@ -77,10 +79,9 @@ void MainWindow::on_lineEdit_returnPressed()
     // 这里因为模拟设了持久化代理显示按钮
     // 如果不进行下面的操作的话，createEditor不更新
     // 给按钮绑定的index就没更新，所以会导致index越界，找的不准等问题
-    // 为了搜索后强行更新index，所以出此下策，强制让它更新
-    // 如果有啥更优雅的办法，请务必教我一下
-    ui->treeView_2->setModel(nullptr);
-    ui->treeView_2->setModel(mFilterModel);
+    //reset 会重置所有状态 ，感觉不太好F
+//    ui->treeView_2->reset();
+    ui->treeView_2->doItemsLayout();
 }
 
 void MainWindow::on_lineEdit_textChanged(const QString &arg1)

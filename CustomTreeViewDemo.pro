@@ -17,6 +17,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     ItemDelegate.cpp \
+    MyTreeView.cpp \
+    TreeHead.cpp \
     TreeItem.cpp \
     TreeModel.cpp \
     main.cpp \
@@ -25,6 +27,8 @@ SOURCES += \
 HEADERS += \
     ItemDelegate.h \
     MainWindow.h \
+    MyTreeView.h \
+    TreeHead.h \
     TreeItem.h \
     TreeModel.h
 
