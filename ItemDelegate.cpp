@@ -8,6 +8,7 @@
 #include <TreeModel.h>
 #include <QDebug>
 #include <QTextDocument>
+#include <QLineEdit>
 
 namespace {
     constexpr int IDENT = 20;
@@ -23,7 +24,7 @@ ItemDelegate::ItemDelegate(QTreeView *view, QObject * parent)
 {
     setQss();
     m_View->setIndentation(0);
-    m_View->setEditTriggers(QAbstractItemView::NoEditTriggers);
+//    m_View->setEditTriggers(QAbstractItemView::NoEditTriggers);
     m_View->setUniformRowHeights(false);
     connect(m_View->header(), &QHeaderView::sectionResized, this, [](int logicalIndex, int oldSize, int newSize){
         if (logicalIndex == 2) {
@@ -107,6 +108,15 @@ bool ItemDelegate::editorEvent(QEvent * event, QAbstractItemModel * model, const
 QWidget * ItemDelegate::createEditor(QWidget * parent, const QStyleOptionViewItem & option, const QModelIndex & index) const
 {
     Q_UNUSED(option)
+    if (index.column() != 3) {
+        QLineEdit *le = new QLineEdit(parent);
+        connect(le, &QLineEdit::returnPressed, this, [le, index](){
+            TreeItem *item = index.data(Qt::UserRole).value<TreeItem *>();
+            item->setData(index.column(), QVariant(le->text()));
+        });
+        return le;
+    }
+    else {
     QPushButton *b = new QPushButton("777", parent);
     connect(b, &QPushButton::clicked, this, [b,this, option, index]() {
         for (int i = 0; i <= index.column(); i++) {
@@ -117,7 +127,8 @@ QWidget * ItemDelegate::createEditor(QWidget * parent, const QStyleOptionViewIte
 //            m_View->viewport()->update();
         }
     });
-    return b;
+        return b;
+    }
 }
 
 void ItemDelegate::setModelData(QWidget *editor, QAbstractItemModel *model, const QModelIndex &index) const
