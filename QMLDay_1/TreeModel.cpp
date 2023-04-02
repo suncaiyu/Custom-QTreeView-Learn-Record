@@ -14,11 +14,11 @@ TreeModel::TreeModel(QStringList headers, QObject *parent)
     mRootItem = new TreeItem;
     int role = Qt::UserRole;
     role++;
-    mRoleNames[role] = "id";
-    role++;
-    mRoleNames[role] = "api";
-    role++;
-    mRoleNames[role] = "dur";
+    mRoleNames[Qt::DisplayRole] = "display";
+//    role++;
+//    mRoleNames[role] = "api";
+//    role++;
+//    mRoleNames[role] = "dur";
 }
 
 QHash<int,QByteArray> TreeModel::roleNames() const
@@ -75,6 +75,8 @@ QVariant TreeModel::headerData(int section, Qt::Orientation orientation, int rol
 
 QVariant TreeModel::data(const QModelIndex &index, int role) const
 {
+    qDebug() << role;
+
     if (!index.isValid()) {
         return QVariant();
     }
@@ -90,9 +92,9 @@ QVariant TreeModel::data(const QModelIndex &index, int role) const
     {
         //元素打开编辑框时，显示的内容，如果没有这行，编辑框出现时默认为空白
         return item->data(index.column());
-    } else {
+    }/* else {
         return item->ItemData().at(role - Qt::UserRole - 1);
-    }
+    }*/
     //else if (role == Qt::TextAlignmentRole)
     //{
     //    if (index.column() == 0)
@@ -145,7 +147,7 @@ bool TreeModel::setData(const QModelIndex &index, const QVariant &value, int rol
 Qt::ItemFlags TreeModel::flags(const QModelIndex &index) const
 {
     if (!index.isValid())
-        return 0;
+        return Qt::NoItemFlags;
     ////节点是否允许编辑
     Qt::ItemFlags flags = QAbstractItemModel::flags(index);
     flags |= Qt::ItemIsEditable;

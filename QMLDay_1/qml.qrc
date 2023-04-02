@@ -5,5 +5,6 @@
         <file>TextButton.qml</file>
         <file>ListViewDemo.qml</file>
         <file>TreeViewDemo.qml</file>
+        <file>MyTreeViewDelegate.qml</file>
     </qresource>
 </RCC>

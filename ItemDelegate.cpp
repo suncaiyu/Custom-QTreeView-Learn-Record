@@ -23,13 +23,13 @@ ItemDelegate::ItemDelegate(QTreeView *view, QObject * parent)
     : m_View(view), QStyledItemDelegate(parent)
 {
     setQss();
-    m_View->setIndentation(0);
+//    m_View->setIndentation(0);
 //    m_View->setEditTriggers(QAbstractItemView::NoEditTriggers);
     m_View->setUniformRowHeights(false);
-    connect(m_View->header(), &QHeaderView::sectionResized, this, [](int logicalIndex, int oldSize, int newSize){
-        if (logicalIndex == 2) {
-            qDebug() << newSize;
-        }
+    m_View->setWordWrap(true);
+    connect(m_View->header(), &QHeaderView::sectionResized, this, [this](int logicalIndex, int oldSize, int newSize){
+//        m_View->itemDelegate()->sizeHintChanged(QModelIndex());
+         m_View->doItemsLayout();
     });
 }
 
@@ -54,15 +54,9 @@ void ItemDelegate::paint(QPainter * painter, const QStyleOptionViewItem & option
         DrawKeyword(painter, op, index);
         //QStyledItemDelegate::paint(painter, op, index);
     } else {
-        //        if (index.column() == 2) {
-        //            QTextDocument doc;
-        //            painter->save();
-        //            doc.setHtml(item->ItemData()[index.column()].toString());
-        //            doc.setTextWidth(option.rect.width());
-        //            painter->translate(option.rect.x(), option.rect.y());
-        //            doc.drawContents(painter);
-        //            painter->restore();
-        //        } else
+        if (index.column() == 2) {
+            painter->drawText(op.rect.adjusted(5, 0, 0, -5), Qt::TextWrapAnywhere | Qt::AlignVCenter, index.data(Qt::DisplayRole).value<QString>());
+        } else
         if (index.column() == 3) {
             m_View->openPersistentEditor(index);
             QStyledItemDelegate::paint(painter, op, index);
@@ -71,7 +65,18 @@ void ItemDelegate::paint(QPainter * painter, const QStyleOptionViewItem & option
         }
 
     }
-    painter->drawRect(option.rect);
+    QModelIndex id = index;
+    int count = 1;
+    if (index.column() == 0) {
+        while (id.parent().isValid()) {
+            id = id.parent();
+            count++;
+        }
+        op.rect.setX(op.rect.x() - m_View->indentation() * count);
+        painter->drawRect(op.rect);
+    } else {
+        painter->drawRect(option.rect);
+    }
 }
 
 QSize ItemDelegate::sizeHint(const QStyleOptionViewItem & option, const QModelIndex & index) const
@@ -82,10 +87,22 @@ QSize ItemDelegate::sizeHint(const QStyleOptionViewItem & option, const QModelIn
 //        qDebug() << "thisxxxx";
 //        return QStyledItemDelegate::sizeHint(option, index);
 //    }
-    if (m_View->currentIndex() == index) {
-        return QStyledItemDelegate::sizeHint(option, index);
+//    if (m_View->currentIndex() == index) {
+//        return QStyledItemDelegate::sizeHint(option, index);
+//    }
+//    return QSize (QStyledItemDelegate::sizeHint(option, index).width(),LINE_HEIGHT);
+    QString str = index.data(Qt::DisplayRole).toString();
+    QFont font = index.data(Qt::FontRole).value<QFont>();
+    QFontMetrics fm(font);
+    int wordWidth = fm.width(str);
+    int lineCount = wordWidth / (m_View->header()->sectionSize(index.column()) - 10);
+    if (wordWidth % (m_View->header()->sectionSize(index.column()) - 10) > 0) {
+        lineCount++;
     }
-    return QSize (QStyledItemDelegate::sizeHint(option, index).width(),LINE_HEIGHT);
+    QSize sz = QStyledItemDelegate::sizeHint(option, index);
+    sz.setHeight(fm.height() * lineCount + fm.lineSpacing() * (lineCount + 1));
+    sz.setWidth(m_View->header()->sectionSize(index.column()));
+    return sz;
 }
 
 bool ItemDelegate::editorEvent(QEvent * event, QAbstractItemModel * model, const QStyleOptionViewItem & option, const QModelIndex & index)
@@ -110,10 +127,6 @@ QWidget * ItemDelegate::createEditor(QWidget * parent, const QStyleOptionViewIte
     Q_UNUSED(option)
     if (index.column() != 3) {
         QLineEdit *le = new QLineEdit(parent);
-        connect(le, &QLineEdit::returnPressed, this, [le, index](){
-            TreeItem *item = index.data(Qt::UserRole).value<TreeItem *>();
-            item->setData(index.column(), QVariant(le->text()));
-        });
         return le;
     }
     else {
@@ -133,7 +146,10 @@ QWidget * ItemDelegate::createEditor(QWidget * parent, const QStyleOptionViewIte
 
 void ItemDelegate::setModelData(QWidget *editor, QAbstractItemModel *model, const QModelIndex &index) const
 {
-    return;
+    if (index.column() != 3) {
+        TreeItem *item = index.data(Qt::UserRole).value<TreeItem *>();
+        item->setData(index.column(), QVariant(qobject_cast<QLineEdit *>(editor)->text()));
+    }
 }
 
 void ItemDelegate::DrawTriangle(QPainter * painter, const QStyleOptionViewItem &option, const QModelIndex & index) const
@@ -176,9 +192,15 @@ void ItemDelegate::setQss()
                     } \
                     QTreeView::item:selected,QTreeView::branch:selected{ \
                     background:rgba(%5,%6,%7,%8); \
+                    } \
+                    QTreeView::branch:closed:has-children{undefined \
+                    image: url(:/res/minus.png); \
+                    } \
+                    QTreeView::branch:open:has-children{undefined \
+                    image: url(:/res/minus.png); \
                     }").arg(QString::number(COLOR_HOVER.red()), QString::number(COLOR_HOVER.green()), QString::number(COLOR_HOVER.blue()), QString::number(COLOR_HOVER.alpha()),
     QString::number(COLOR_SELECTED.red()), QString::number(COLOR_SELECTED.green()), QString::number(COLOR_SELECTED.blue()),QString::number(COLOR_SELECTED.alpha()));
-    m_View->setStyleSheet(qss);
+//    m_View->setStyleSheet(qss);
 }
 
 void ItemDelegate::DrawKeyword(QPainter *painter,

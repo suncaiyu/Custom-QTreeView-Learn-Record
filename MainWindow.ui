@@ -18,7 +18,13 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
-       <widget class="QTreeView" name="treeView"/>
+       <widget class="QTreeView" name="treeView">
+        <property name="styleSheet">
+         <string notr="true">QTreeView::branch:open:has-children{
+                    image: url(:/res/1minus.png);}
+QTreeView::branch:closed:has-children{ image:url(:/res/1plus.png);}</string>
+        </property>
+       </widget>
       </item>
       <item>
        <widget class="MyTreeView" name="treeView_2"/>

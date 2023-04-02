@@ -157,7 +157,7 @@ void ItemDelegate::DrawKeyword(QPainter *painter,
             }
             QRect rc = option.rect.adjusted(ident, 0, 0, 0);
             painter->drawText(option.rect.adjusted(ident, 0, 0, 0), Qt::AlignVCenter, list[i]);
-            ident += fm.width(list[i]);
+            ident += fm.horizontalAdvance(list[i]);
         } else {
             if (option.state.testFlag(QStyle::State_Selected)) {
                 p.setColor(option.palette.highlightedText().color());
@@ -171,7 +171,7 @@ void ItemDelegate::DrawKeyword(QPainter *painter,
                 return;
             }
             painter->drawText(option.rect.adjusted(ident, 0, 0, 0), Qt::AlignVCenter, list[i]);
-            ident += fm.width(list[i]);
+            ident += fm.horizontalAdvance(list[i]);
         }
         painter->restore();
     }
