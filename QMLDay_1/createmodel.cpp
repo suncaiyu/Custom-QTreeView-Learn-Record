@@ -1,8 +1,8 @@
-#include "createmodel.h"
+﻿#include "createmodel.h"
 #include <QDebug>
 CreateModel::CreateModel()
 {
-
+InitModel();
 }
 
 void CreateModel::InitModel()

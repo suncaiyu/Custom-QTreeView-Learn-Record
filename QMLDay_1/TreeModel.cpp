@@ -12,13 +12,7 @@ TreeModel::TreeModel(QStringList headers, QObject *parent)
 {
     mHeaders = headers;
     mRootItem = new TreeItem;
-    int role = Qt::UserRole;
-    role++;
     mRoleNames[Qt::DisplayRole] = "display";
-//    role++;
-//    mRoleNames[role] = "api";
-//    role++;
-//    mRoleNames[role] = "dur";
 }
 
 QHash<int,QByteArray> TreeModel::roleNames() const
@@ -61,22 +55,20 @@ TreeItem *TreeModel::root()
     return mRootItem;
 }
 
-QVariant TreeModel::headerData(int section, Qt::Orientation orientation, int role) const
-{
-    if (orientation == Qt::Horizontal)
-    {
-        if (role == Qt::DisplayRole)
-        {
-            return mHeaders.at(section);
-        }
-    }
-    return QVariant();
-}
+//QVariant TreeModel::headerData(int section, Qt::Orientation orientation, int role) const
+//{
+//    if (orientation == Qt::Horizontal)
+//    {
+//        if (role == Qt::DisplayRole)
+//        {
+//            return mHeaders.at(section);
+//        }
+//    }
+//    return QVariant();
+//}
 
 QVariant TreeModel::data(const QModelIndex &index, int role) const
 {
-    qDebug() << role;
-
     if (!index.isValid()) {
         return QVariant();
     }
@@ -92,9 +84,10 @@ QVariant TreeModel::data(const QModelIndex &index, int role) const
     {
         //元素打开编辑框时，显示的内容，如果没有这行，编辑框出现时默认为空白
         return item->data(index.column());
-    }/* else {
+    }
+    else {
         return item->ItemData().at(role - Qt::UserRole - 1);
-    }*/
+    }
     //else if (role == Qt::TextAlignmentRole)
     //{
     //    if (index.column() == 0)

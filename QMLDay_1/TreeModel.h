@@ -28,7 +28,7 @@ public:
     //rowCount: 获取指定元素的子节点个数（下一级行数）
     //columnCount: 获取指定元素的列数
     //setData: 修改节点内容
-    QVariant headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole) const override;
+//    QVariant headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole) const override;
     QVariant data(const QModelIndex &index, int role) const override;
     bool setData(const QModelIndex &index, const QVariant &value, int role = Qt::EditRole);
     Qt::ItemFlags flags(const QModelIndex &index) const override;
