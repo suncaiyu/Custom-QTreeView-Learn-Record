@@ -8,3 +8,6 @@ QMLDay_1：一些qml练习以及怎么再qml中使用c++的model，不过delegat
 
 包括 自定义model ，sortproxymodel查找子节点 delegate 自绘界面等
 ![image](snap/customtreeview.png)
+![image](snap/customtreeview1.png)
+![image](snap/customtreeview2.png)
+![image](snap/customtreeview3.png)
