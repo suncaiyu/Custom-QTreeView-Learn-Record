@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qss1.qss</file>
+        <file>qss2.qss</file>
+        <file>b</file>
+        <file>Simplified-Chinese3500.otf</file>
+        <file>host_06fb1bade340pid_117_time_2023_01_13_03_15_23_518049.paddle_trace.json</file>
+    </qresource>
+</RCC>

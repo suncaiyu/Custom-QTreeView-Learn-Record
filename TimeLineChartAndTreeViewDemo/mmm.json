@@ -1,0 +1,36 @@
+{
+    "Device id": 0,
+    "Perf Data": [
+        {
+            "Slave_Core_id": 0,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 60971164976920280,
+                            "Perf end value": 60971164977072260
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 67972632520373408,
+                            "Perf end value": 67972632520525388
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 186514822564518492,
+                            "Perf end value": 186514822564531966
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 64897532428064936,
+                            "Perf end value": 64897532428069543
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

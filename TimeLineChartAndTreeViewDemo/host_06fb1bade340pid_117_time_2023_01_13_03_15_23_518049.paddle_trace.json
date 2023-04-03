@@ -1,0 +1,552 @@
+
+  {
+    "displayTimeUnit": "ms",
+    "schemaVersion": "1.0.2",
+    "span_indx": "0",
+    "traceEvents": [
+  
+  {
+    "name": "ProfileStep#0[1.601 ms]", "pid": 117, "tid": "117(Python)",
+    "ts": 1673579723516010, "dur": 1601.497,
+    "ph": "X", "cat": "ProfileStep",
+    "cname": "thread_state_runnable",
+    "args": {
+      "start_time": "0.000 us",
+      "end_time": "1601.497 us"
+    }
+  },
+  
+  {
+    "name": "topk pybind_imperative_func[1.068 ms]", "pid": 117, "tid": "117(C++)",
+    "ts": 1673579723516522, "dur": 1067.814,
+    "ph": "X", "cat": "UserDefined",
+    "cname": "thread_state_runnable",
+    "args": {
+      "start_time": "511.791 us",
+      "end_time": "1579.605 us"
+    }
+  },
+  
+  {
+    "name": "topk dygraph[962.865 us]", "pid": 117, "tid": "117(C++)",
+    "ts": 1673579723516624, "dur": 962.865,
+    "ph": "X", "cat": "Operator",
+    "cname": "thread_state_runnable",
+    "args": {
+      "start_time": "613.664 us",
+      "end_time": "1576.529 us",
+      "input_shapes": {},
+      "input_dtypes": {},
+      "callstack": ""
+    }
+  },
+  
+  {
+    "name": "topk infer_meta[69.071 us]", "pid": 117, "tid": "117(C++)",
+    "ts": 1673579723516807, "dur": 69.071,
+    "ph": "X", "cat": "OperatorInner",
+    "cname": "thread_state_runnable",
+    "args": {
+      "start_time": "797.122 us",
+      "end_time": "866.193 us"
+    }
+  },
+  
+  {
+    "name": "topk compute[654.912 us]", "pid": 117, "tid": "117(C++)",
+    "ts": 1673579723516925, "dur": 654.912,
+    "ph": "X", "cat": "OperatorInner",
+    "cname": "thread_state_runnable",
+    "args": {
+      "start_time": "914.684 us",
+      "end_time": "1569.596 us"
+    }
+  },
+  
+  {
+    "name": "sdaaGetDevice[0.651 us]", "pid": 117, "tid": "194(C++)",
+    "ts": 1673579723516100, "dur": 0.651,
+    "ph": "X", "cat": "CudaRuntime",
+    "cname": "thread_state_running",
+    "args": {
+      "correlation id": 2,
+      "start_time": "89.700 us",
+      "end_time": "90.351 us"
+    }
+  },
+  
+  {
+    "name": "launch", "id": 2, "pid": 117, "tid": "194(C++)",
+    "ts": 1673579723516100,
+    "ph": "s", "cat": "async"
+  },
+  
+  {
+    "name": "sdaaMalloc[10.911 us]", "pid": 117, "tid": "194(C++)",
+    "ts": 1673579723516105, "dur": 10.911,
+    "ph": "X", "cat": "CudaRuntime",
+    "cname": "thread_state_running",
+    "args": {
+      "correlation id": 3,
+      "start_time": "95.131 us",
+      "end_time": "106.042 us"
+    }
+  },
+  
+  {
+    "name": "launch", "id": 3, "pid": 117, "tid": "194(C++)",
+    "ts": 1673579723516110,
+    "ph": "s", "cat": "async"
+  },
+  
+  {
+    "name": "sdaaMemcpy[304.797 us]", "pid": 117, "tid": "194(C++)",
+    "ts": 1673579723516120, "dur": 304.797,
+    "ph": "X", "cat": "CudaRuntime",
+    "cname": "thread_state_running",
+    "args": {
+      "correlation id": 4,
+      "start_time": "110.120 us",
+      "end_time": "414.917 us"
+    }
+  },
+  
+  {
+    "name": "launch", "id": 4, "pid": 117, "tid": "194(C++)",
+    "ts": 1673579723516272,
+    "ph": "s", "cat": "async"
+  },
+  
+  {
+    "name": "cmd_WriteMemory[12.985 us]", "pid": 0, "tid": 0,
+    "ts": 1673579723516126, "dur": 12.985,
+    "ph": "X", "cat": "Memcpy",
+    "cname": "cq_build_failed",
+    "args": {
+      "start_time": "115.870 us",
+      "end_time": "128.855 us",
+      "stream": 0, "correlation id": 4,
+      "bytes": 961, "memory bandwidth (GB/s)": 0.074
+    }
+  },
+  
+  {
+    "name": "launch", "id": 4, "pid": 0, "tid": 0,
+    "ts": 1673579723516132,
+    "ph": "f", "cat": "async", "bp": "e"
+  },
+  
+  {
+    "name": "sdaaSetDevice[1.383 us]", "pid": 117, "tid": "194(C++)",
+    "ts": 1673579723516538, "dur": 1.383,
+    "ph": "X", "cat": "CudaRuntime",
+    "cname": "thread_state_running",
+    "args": {
+      "correlation id": 5,
+      "start_time": "527.961 us",
+      "end_time": "529.344 us"
+    }
+  },
+  
+  {
+    "name": "launch", "id": 5, "pid": 117, "tid": "194(C++)",
+    "ts": 1673579723516539,
+    "ph": "s", "cat": "async"
+  },
+  
+  {
+    "name": "sdaaGetDevice[0.582 us]", "pid": 117, "tid": "194(C++)",
+    "ts": 1673579723516723, "dur": 0.582,
+    "ph": "X", "cat": "CudaRuntime",
+    "cname": "thread_state_running",
+    "args": {
+      "correlation id": 6,
+      "start_time": "713.202 us",
+      "end_time": "713.784 us"
+    }
+  },
+  
+  {
+    "name": "launch", "id": 6, "pid": 117, "tid": "194(C++)",
+    "ts": 1673579723516723,
+    "ph": "s", "cat": "async"
+  },
+  
+  {
+    "name": "sdaaMalloc[9.679 us]", "pid": 117, "tid": "194(C++)",
+    "ts": 1673579723516944, "dur": 9.679,
+    "ph": "X", "cat": "CudaRuntime",
+    "cname": "thread_state_running",
+    "args": {
+      "correlation id": 7,
+      "start_time": "933.821 us",
+      "end_time": "943.500 us"
+    }
+  },
+  
+  {
+    "name": "launch", "id": 7, "pid": 117, "tid": "194(C++)",
+    "ts": 1673579723516949,
+    "ph": "s", "cat": "async"
+  },
+  
+  {
+    "name": "sdaaMalloc[2.715 us]", "pid": 117, "tid": "194(C++)",
+    "ts": 1673579723516956, "dur": 2.715,
+    "ph": "X", "cat": "CudaRuntime",
+    "cname": "thread_state_running",
+    "args": {
+      "correlation id": 8,
+      "start_time": "946.575 us",
+      "end_time": "949.290 us"
+    }
+  },
+  
+  {
+    "name": "launch", "id": 8, "pid": 117, "tid": "194(C++)",
+    "ts": 1673579723516958,
+    "ph": "s", "cat": "async"
+  },
+  
+  {
+    "name": "sdaaMalloc[5.691 us]", "pid": 117, "tid": "194(C++)",
+    "ts": 1673579723517078, "dur": 5.691,
+    "ph": "X", "cat": "CudaRuntime",
+    "cname": "thread_state_running",
+    "args": {
+      "correlation id": 9,
+      "start_time": "1067.755 us",
+      "end_time": "1073.446 us"
+    }
+  },
+  
+  {
+    "name": "launch", "id": 9, "pid": 117, "tid": "194(C++)",
+    "ts": 1673579723517080,
+    "ph": "s", "cat": "async"
+  },
+  
+  {
+    "name": "sdaaMemcpy[57.609 us]", "pid": 117, "tid": "194(C++)",
+    "ts": 1673579723517084, "dur": 57.609,
+    "ph": "X", "cat": "CudaRuntime",
+    "cname": "thread_state_running",
+    "args": {
+      "correlation id": 10,
+      "start_time": "1074.298 us",
+      "end_time": "1131.907 us"
+    }
+  },
+  
+  {
+    "name": "launch", "id": 10, "pid": 117, "tid": "194(C++)",
+    "ts": 1673579723517113,
+    "ph": "s", "cat": "async"
+  },
+  
+  {
+    "name": "cmd_WriteMemory[49.383 us]", "pid": 0, "tid": 0,
+    "ts": 1673579723517090, "dur": 49.383,
+    "ph": "X", "cat": "Memcpy",
+    "cname": "cq_build_failed",
+    "args": {
+      "start_time": "1079.688 us",
+      "end_time": "1129.071 us",
+      "stream": 0, "correlation id": 10,
+      "bytes": 881, "memory bandwidth (GB/s)": 0.018
+    }
+  },
+  
+  {
+    "name": "launch", "id": 10, "pid": 0, "tid": 0,
+    "ts": 1673579723517114,
+    "ph": "f", "cat": "async", "bp": "e"
+  },
+  
+  {
+    "name": "__sdaaPushCallConfiguration[0.972 us]", "pid": 117, "tid": "194(C++)",
+    "ts": 1673579723517146, "dur": 0.972,
+    "ph": "X", "cat": "CudaRuntime",
+    "cname": "thread_state_running",
+    "args": {
+      "correlation id": 11,
+      "start_time": "1135.904 us",
+      "end_time": "1136.876 us"
+    }
+  },
+  
+  {
+    "name": "launch", "id": 11, "pid": 117, "tid": "194(C++)",
+    "ts": 1673579723517146,
+    "ph": "s", "cat": "async"
+  },
+  
+  {
+    "name": "__sdaaPopCallConfiguration[3.467 us]", "pid": 117, "tid": "194(C++)",
+    "ts": 1673579723517150, "dur": 3.467,
+    "ph": "X", "cat": "CudaRuntime",
+    "cname": "thread_state_running",
+    "args": {
+      "correlation id": 12,
+      "start_time": "1140.022 us",
+      "end_time": "1143.489 us"
+    }
+  },
+  
+  {
+    "name": "launch", "id": 12, "pid": 117, "tid": "194(C++)",
+    "ts": 1673579723517152,
+    "ph": "s", "cat": "async"
+  },
+  
+  {
+    "name": "sdaaLaunchKernel[156.076 us]", "pid": 117, "tid": "194(C++)",
+    "ts": 1673579723517156, "dur": 156.076,
+    "ph": "X", "cat": "CudaRuntime",
+    "cname": "thread_state_running",
+    "args": {
+      "correlation id": 13,
+      "start_time": "1146.344 us",
+      "end_time": "1302.420 us"
+    }
+  },
+  
+  {
+    "name": "launch", "id": 13, "pid": 117, "tid": "194(C++)",
+    "ts": 1673579723517234,
+    "ph": "s", "cat": "async"
+  },
+  
+  {
+    "name": "slave_swdnnTopk_float[51.000 us]", "pid": 0, "tid": 7,
+    "ts": 1673579723517277, "dur": 51.000,
+    "ph": "X", "cat": "Kernel",
+    "cname": "cq_build_failed",
+    "args": {
+      "start_time": "1267.063 us",
+      "end_time": "1318.063 us",
+      "device": 0, "context": 1778482096,
+      "stream": 7, "correlation id": 13,
+      "registers per thread": -1149608116,
+      "shared memory": 1778514873,
+      "blocks per SM": 39134251043540749885898752.000000,
+      "warps per SM": 0.000000,
+      "grid": [32745, 1778482240, 32745],
+      "block": [881, 0, 1778482288],
+      "theoretical achieved occupancy %": 3913472918314714043747663872.000
+    }
+  },
+  
+  {
+    "name": "launch", "id": 13, "pid": 0, "tid": 7,
+    "ts": 1673579723517302,
+    "ph": "f", "cat": "async", "bp": "e"
+  },
+  
+  {
+    "name": "sdaaDeviceSynchronize[260.483 us]", "pid": 117, "tid": "194(C++)",
+    "ts": 1673579723517314, "dur": 260.483,
+    "ph": "X", "cat": "CudaRuntime",
+    "cname": "thread_state_running",
+    "args": {
+      "correlation id": 14,
+      "start_time": "1304.545 us",
+      "end_time": "1565.028 us"
+    }
+  },
+  
+  {
+    "name": "launch", "id": 14, "pid": 117, "tid": "194(C++)",
+    "ts": 1673579723517445,
+    "ph": "s", "cat": "async"
+  },
+  
+  {
+    "name": "sdaaGetDevice[0.541 us]", "pid": 117, "tid": "194(C++)",
+    "ts": 1673579723517629, "dur": 0.541,
+    "ph": "X", "cat": "CudaRuntime",
+    "cname": "thread_state_running",
+    "args": {
+      "correlation id": 15,
+      "start_time": "1619.010 us",
+      "end_time": "1619.551 us"
+    }
+  },
+  
+  {
+    "name": "launch", "id": 15, "pid": 117, "tid": "194(C++)",
+    "ts": 1673579723517629,
+    "ph": "s", "cat": "async"
+  },
+  
+  {
+    "name": "process_name", "pid": 117, "tid": "117(Python)",
+    "ph": "M",
+    "args": {
+      "name": "Process 117 (CPU)"
+    }
+  },
+  {
+    "name": "process_name", "pid": 117, "tid": "117(C++)",
+    "ph": "M",
+    "args": {
+      "name": "Process 117 (CPU)"
+    }
+  },
+   {
+    "name": "thread_name", "pid": 117, "tid": "117(Python)",
+    "ph": "M",
+    "args": {
+      "name": "thread 117:MainThread(Python)"
+    }
+  },
+  {
+    "name": "thread_name", "pid": 117, "tid": "117(C++)",
+    "ph": "M",
+    "args": {
+      "name": "thread 117:MainThread(C++)"
+    }
+  },
+  {
+    "name": "process_sort_index", "pid": 117, "tid": 117,
+    "ph": "M",
+    "args": {
+      "sort_index": 117
+    }
+  },
+  {
+    "name": "thread_sort_index", "pid": 117, "tid": "117(Python)",
+    "ph": "M",
+    "args": {
+      "sort_index": 234
+    }
+  },
+  {
+    "name": "thread_sort_index", "pid": 117, "tid": "117(C++)",
+    "ph": "M",
+    "args": {
+      "sort_index": 235
+    }
+  },
+  
+  {
+    "name": "process_name", "pid": 117, "tid": "194(Python)",
+    "ph": "M",
+    "args": {
+      "name": "Process 117 (CPU)"
+    }
+  },
+  {
+    "name": "process_name", "pid": 117, "tid": "194(C++)",
+    "ph": "M",
+    "args": {
+      "name": "Process 117 (CPU)"
+    }
+  },
+   {
+    "name": "thread_name", "pid": 117, "tid": "194(Python)",
+    "ph": "M",
+    "args": {
+      "name": "thread 194:(Python)"
+    }
+  },
+  {
+    "name": "thread_name", "pid": 117, "tid": "194(C++)",
+    "ph": "M",
+    "args": {
+      "name": "thread 194:(C++)"
+    }
+  },
+  {
+    "name": "process_sort_index", "pid": 117, "tid": 194,
+    "ph": "M",
+    "args": {
+      "sort_index": 117
+    }
+  },
+  {
+    "name": "thread_sort_index", "pid": 117, "tid": "194(Python)",
+    "ph": "M",
+    "args": {
+      "sort_index": 388
+    }
+  },
+  {
+    "name": "thread_sort_index", "pid": 117, "tid": "194(C++)",
+    "ph": "M",
+    "args": {
+      "sort_index": 389
+    }
+  },
+  
+  {
+    "name": "process_name", "pid": 0, "tid": 0,
+    "ph": "M",
+    "args": {
+      "name": "Deivce 0 (GPU)"
+    }
+  },
+   {
+    "name": "thread_name", "pid": 0, "tid": 0,
+    "ph": "M",
+    "args": {
+      "name": "stream 0"
+    }
+  },
+  {
+    "name": "process_sort_index", "pid": 0, "tid": 0,
+    "ph": "M",
+    "args": {
+      "sort_index": 268435456
+    }
+  },
+  {
+    "name": "thread_sort_index", "pid": 0, "tid": 0,
+    "ph": "M",
+    "args": {
+      "sort_index": 0
+    }
+  },
+  
+  {
+    "name": "process_name", "pid": 0, "tid": 7,
+    "ph": "M",
+    "args": {
+      "name": "Deivce 0 (GPU)"
+    }
+  },
+   {
+    "name": "thread_name", "pid": 0, "tid": 7,
+    "ph": "M",
+    "args": {
+      "name": "stream 7"
+    }
+  },
+  {
+    "name": "process_sort_index", "pid": 0, "tid": 7,
+    "ph": "M",
+    "args": {
+      "sort_index": 268435456
+    }
+  },
+  {
+    "name": "thread_sort_index", "pid": 0, "tid": 7,
+    "ph": "M",
+    "args": {
+      "sort_index": 7
+    }
+  },
+  
+  {}
+  ],
+  
+  "ExtraInfo": {
+     "117": "MainThread",
+   
+     "Process Cpu Utilization": "0.000000",
+   
+     "System Cpu Utilization": "0.200000"
+   
+  }
+  }
+  

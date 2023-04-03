@@ -1,0 +1,11 @@
+Color {
+    qproperty-TimelineBackGroundEnd: rgb(237, 237, 237);
+	qproperty-TimelineBackGroundStart: white;
+	qproperty-LabelBackGround:rgb(78, 78, 78);
+	qproperty-TimelineTextColor:rgb(120, 123, 133);
+        qproperty-LabelTextColor:white;
+	qproperty-ChartTextColor:rgb(120, 123, 133);
+	qproperty-BorderColor:rgb(184, 184, 184);
+	qproperty-ChartBackGround:white;
+	qproperty-ExpandFlagColor:black;
+}

@@ -1,0 +1,2469 @@
+{
+    "Device id": 0,
+    "Perf Data": [
+        {
+            "Slave_Core_id": 0,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 60971164976920280,
+                            "Perf end value": 60971164977072260
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 67972632520373408,
+                            "Perf end value": 67972632520525388
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 186514822564518492,
+                            "Perf end value": 186514822564531966
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 64897532428064936,
+                            "Perf end value": 64897532428069543
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 60971164978207942,
+                            "Perf end value": 60971164978277804
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 67972632521661070,
+                            "Perf end value": 67972632521730932
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 186514822564648317,
+                            "Perf end value": 186514822564661803
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 64897532428115468,
+                            "Perf end value": 64897532428120282
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 1,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 68412665124868138,
+                            "Perf end value": 68412665125010854
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 36671288143426913,
+                            "Perf end value": 36671288143569629
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 154920383231856497,
+                            "Perf end value": 154920383231869807
+                        },
+                        {
+                            "Perf Name": "双发射拍数",
+                            "Perf begin value": 39850545032449848,
+                            "Perf end value": 39850545032454444
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 68412665125367416,
+                            "Perf end value": 68412665125465707
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 36671288143926191,
+                            "Perf end value": 36671288144024482
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 154920383231895283,
+                            "Perf end value": 154920383231908596
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 39850545032463208,
+                            "Perf end value": 39850545032467997
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 2,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 18821371224135003,
+                            "Perf end value": 18821371224290240
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 35714748079306218,
+                            "Perf end value": 35714748079461455
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 207086673193015146,
+                            "Perf end value": 207086673193028404
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 67719924813460072,
+                            "Perf end value": 67719924813464668
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 18821371224637302,
+                            "Perf end value": 18821371224732891
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 35714748079808517,
+                            "Perf end value": 35714748079904106
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 207086673193053773,
+                            "Perf end value": 207086673193067034
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 67719924813473434,
+                            "Perf end value": 67719924813478222
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 3,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 34421242551683724,
+                            "Perf end value": 34421242551840550
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 40259287812584941,
+                            "Perf end value": 40259287812741767
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 164313126418756502,
+                            "Perf end value": 164313126418769511
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 70421082781750999,
+                            "Perf end value": 70421082781755595
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 34421242552186570,
+                            "Perf end value": 34421242552287334
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 40259287813087787,
+                            "Perf end value": 40259287813188551
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 164313126418794388,
+                            "Perf end value": 164313126418807400
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 70421082781764361,
+                            "Perf end value": 70421082781769149
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 4,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 61559394613667276,
+                            "Perf end value": 61559394613811413
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 70028461521793322,
+                            "Perf end value": 70028461521937459
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 167507432173899678,
+                            "Perf end value": 167507432173913039
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 32329263767981312,
+                            "Perf end value": 32329263767985908
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 61559394614169421,
+                            "Perf end value": 61559394614269935
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 70028461522295467,
+                            "Perf end value": 70028461522395981
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 167507432173938620,
+                            "Perf end value": 167507432173951984
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 32329263767994675,
+                            "Perf end value": 32329263767999463
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 5,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 8617923558191222,
+                            "Perf end value": 8617923558345625
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 14996309078654049,
+                            "Perf end value": 14996309078808452
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 206061687218676771,
+                            "Perf end value": 206061687218689744
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 66020427128506089,
+                            "Perf end value": 66020427128510685
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 8617923558693139,
+                            "Perf end value": 8617923558793631
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 14996309079155966,
+                            "Perf end value": 14996309079256458
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 206061687218714543,
+                            "Perf end value": 206061687218727519
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 66020427128519452,
+                            "Perf end value": 66020427128524241
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 6,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 25408302399933815,
+                            "Perf end value": 25408302400078989
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 67404067415306718,
+                            "Perf end value": 67404067415451892
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 168422896197744750,
+                            "Perf end value": 168422896197757861
+                        },
+                        {
+                            "Perf Name": "双发射拍数",
+                            "Perf begin value": 49811982635255621,
+                            "Perf end value": 49811982635260217
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 25408302400433898,
+                            "Perf end value": 25408302400536425
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 67404067415806801,
+                            "Perf end value": 67404067415909328
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 168422896197782942,
+                            "Perf end value": 168422896197796056
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 49811982635268984,
+                            "Perf end value": 49811982635273772
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 7,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 59579417453883905,
+                            "Perf end value": 59579417454043367
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 43194891410755002,
+                            "Perf end value": 43194891410914464
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 169550555517737332,
+                            "Perf end value": 169550555517750693
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 28835362705500081,
+                            "Perf end value": 28835362705504677
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 59579417454386399,
+                            "Perf end value": 59579417454490136
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 43194891411257496,
+                            "Perf end value": 43194891411361233
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 169550555517776268,
+                            "Perf end value": 169550555517789632
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 28835362705513444,
+                            "Perf end value": 28835362705518233
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 8,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 23817616582610144,
+                            "Perf end value": 23817616582761680
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 54679408462891599,
+                            "Perf end value": 54679408463043135
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 206899792148651684,
+                            "Perf end value": 206899792148664942
+                        },
+                        {
+                            "Perf Name": "双发射拍数",
+                            "Perf begin value": 54024752905665373,
+                            "Perf end value": 54024752905669969
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 23817616583109162,
+                            "Perf end value": 23817616583216109
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 54679408463390617,
+                            "Perf end value": 54679408463497564
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 206899792148690329,
+                            "Perf end value": 206899792148703590
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 54024752905678735,
+                            "Perf end value": 54024752905683524
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 9,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 70262445752981347,
+                            "Perf end value": 70262445753127651
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 68191325077952315,
+                            "Perf end value": 68191325078098619
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 181291900844007009,
+                            "Perf end value": 181291900844020370
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 33714814678096336,
+                            "Perf end value": 33714814678100932
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 70262445753492457,
+                            "Perf end value": 70262445753601874
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 68191325078463425,
+                            "Perf end value": 68191325078572842
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 181291900844045957,
+                            "Perf end value": 181291900844059321
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 33714814678109699,
+                            "Perf end value": 33714814678114487
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 10,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 38462106234158387,
+                            "Perf end value": 38462106234313488
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 71775698278518412,
+                            "Perf end value": 71775698278673513
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 145261324602744735,
+                            "Perf end value": 145261324602758247
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 11674681609731277,
+                            "Perf end value": 11674681609735933
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 38462106234661776,
+                            "Perf end value": 38462106234764935
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 71775698279021801,
+                            "Perf end value": 71775698279124960
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 145261324602783988,
+                            "Perf end value": 145261324602797503
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 11674681609744761,
+                            "Perf end value": 11674681609749610
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 11,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 16499226121949942,
+                            "Perf end value": 16499226122105922
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 17826009497723536,
+                            "Perf end value": 17826009497879516
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 168835541804216533,
+                            "Perf end value": 168835541804229784
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 43927818552417264,
+                            "Perf end value": 43927818552421920
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 16499226122452419,
+                            "Perf end value": 16499226122556649
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 17826009498226013,
+                            "Perf end value": 17826009498330243
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 168835541804254949,
+                            "Perf end value": 168835541804268203
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 43927818552430747,
+                            "Perf end value": 43927818552435597
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 12,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 7554791405368578,
+                            "Perf end value": 7554791405514902
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 11082158434339,
+                            "Perf end value": 11082158580663
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 149242048467003429,
+                            "Perf end value": 149242048467016504
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 38807917989026054,
+                            "Perf end value": 38807917989030710
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 7554791405879994,
+                            "Perf end value": 7554791405996830
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 11082158945755,
+                            "Perf end value": 11082159062591
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 149242048467041317,
+                            "Perf end value": 149242048467054395
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 38807917989039538,
+                            "Perf end value": 38807917989044388
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 13,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 21014064214361534,
+                            "Perf end value": 21014064214519529
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 4627459340676084,
+                            "Perf end value": 4627459340834079
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 186731720936436538,
+                            "Perf end value": 186731720936449949
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 69782368982599287,
+                            "Perf end value": 69782368982603943
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 21014064214873459,
+                            "Perf end value": 21014064214989736
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 4627459341188009,
+                            "Perf end value": 4627459341304286
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 186731720936475440,
+                            "Perf end value": 186731720936488854
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 69782368982612771,
+                            "Perf end value": 69782368982617621
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 14,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 17199866900562748,
+                            "Perf end value": 17199866900708098
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 14740792536108778,
+                            "Perf end value": 14740792536254128
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 154723001115441953,
+                            "Perf end value": 154723001115455006
+                        },
+                        {
+                            "Perf Name": "双发射拍数",
+                            "Perf begin value": 25812306552378494,
+                            "Perf end value": 25812306552383150
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 17199866901062923,
+                            "Perf end value": 17199866901165460
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 14740792536608953,
+                            "Perf end value": 14740792536711490
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 154723001115479778,
+                            "Perf end value": 154723001115492834
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 25812306552391978,
+                            "Perf end value": 25812306552396827
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 15,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 44745272219774061,
+                            "Perf end value": 44745272219934619
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 58607905050237241,
+                            "Perf end value": 58607905050397799
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 168637609934937926,
+                            "Perf end value": 168637609934951538
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 42327871188348588,
+                            "Perf end value": 42327871188353244
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 44745272220285193,
+                            "Perf end value": 44745272220402328
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 58607905050748373,
+                            "Perf end value": 58607905050865508
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 168637609934977431,
+                            "Perf end value": 168637609934991046
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 42327871188362072,
+                            "Perf end value": 42327871188366922
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 16,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 63110525942543244,
+                            "Perf end value": 63110525942696270
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 69830605261085784,
+                            "Perf end value": 69830605261238810
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 190771966310952982,
+                            "Perf end value": 190771966310966345
+                        },
+                        {
+                            "Perf Name": "双发射拍数",
+                            "Perf begin value": 70368689643516057,
+                            "Perf end value": 70368689643520713
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 63110525943005289,
+                            "Perf end value": 63110525943150401
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 69830605261547829,
+                            "Perf end value": 69830605261692941
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 190771966310991749,
+                            "Perf end value": 190771966311005115
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 70368689643529541,
+                            "Perf end value": 70368689643534390
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 17,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 45027922520123848,
+                            "Perf end value": 45027922520274595
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 16952965440543837,
+                            "Perf end value": 16952965440694584
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 176043024872298409,
+                            "Perf end value": 176043024872312070
+                        },
+                        {
+                            "Perf Name": "双发射拍数",
+                            "Perf begin value": 27232291653192994,
+                            "Perf end value": 27232291653197650
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 45027922520596997,
+                            "Perf end value": 45027922520731931
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 16952965441016986,
+                            "Perf end value": 16952965441151920
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 176043024872338073,
+                            "Perf end value": 176043024872351737
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 27232291653206478,
+                            "Perf end value": 27232291653211328
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 18,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 7908999975760180,
+                            "Perf end value": 7908999975916542
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 71763595472141210,
+                            "Perf end value": 71763595472297572
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 193708530181670375,
+                            "Perf end value": 193708530181683452
+                        },
+                        {
+                            "Perf Name": "双发射拍数",
+                            "Perf begin value": 65248997360849667,
+                            "Perf end value": 65248997360854323
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 7908999976212844,
+                            "Perf end value": 7908999976329064
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 71763595472593874,
+                            "Perf end value": 71763595472710094
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 193708530181708281,
+                            "Perf end value": 193708530181721361
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 65248997360863151,
+                            "Perf end value": 65248997360867999
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 19,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 20356858034014429,
+                            "Perf end value": 20356858034172029
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 17613267621883925,
+                            "Perf end value": 17613267622041525
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 204650401586837164,
+                            "Perf end value": 204650401586850428
+                        },
+                        {
+                            "Perf Name": "双发射拍数",
+                            "Perf begin value": 31023608004367742,
+                            "Perf end value": 31023608004372398
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 20356858034467093,
+                            "Perf end value": 20356858034583555
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 17613267622336589,
+                            "Perf end value": 17613267622453051
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 204650401586875637,
+                            "Perf end value": 204650401586888904
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 31023608004381226,
+                            "Perf end value": 31023608004386074
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 20,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 61579989589832867,
+                            "Perf end value": 61579989589992263
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 31420679885272078,
+                            "Perf end value": 31420679885431474
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 199025723456088764,
+                            "Perf end value": 199025723456102425
+                        },
+                        {
+                            "Perf Name": "双发射拍数",
+                            "Perf begin value": 63042660336626727,
+                            "Perf end value": 63042660336631383
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 61579989590314376,
+                            "Perf end value": 61579989590440316
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 31420679885753587,
+                            "Perf end value": 31420679885879527
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 199025723456128428,
+                            "Perf end value": 199025723456142092
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 63042660336640211,
+                            "Perf end value": 63042660336645061
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 21,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 24647545003297196,
+                            "Perf end value": 24647545003456563
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 67616280905369571,
+                            "Perf end value": 67616280905528938
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 187383422823978713,
+                            "Perf end value": 187383422823992073
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 59492270964873482,
+                            "Perf end value": 59492270964878138
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 24647545003779280,
+                            "Perf end value": 24647545003904375
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 67616280905851655,
+                            "Perf end value": 67616280905976750
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 187383422824017471,
+                            "Perf end value": 187383422824030834
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 59492270964886966,
+                            "Perf end value": 59492270964891816
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 22,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 32889557920361209,
+                            "Perf end value": 32889557920508703
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 16606542498761035,
+                            "Perf end value": 16606542498908529
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 183525957051453292,
+                            "Perf end value": 183525957051466652
+                        },
+                        {
+                            "Perf Name": "双发射拍数",
+                            "Perf begin value": 52657750911763464,
+                            "Perf end value": 52657750911768120
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 32889557920813255,
+                            "Perf end value": 32889557920931589
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 16606542499213081,
+                            "Perf end value": 16606542499331415
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 183525957051492056,
+                            "Perf end value": 183525957051505419
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 52657750911776948,
+                            "Perf end value": 52657750911781796
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 23,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 64149597805296512,
+                            "Perf end value": 64149597805459566
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 27183622759947088,
+                            "Perf end value": 27183622760110142
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 173801726081968949,
+                            "Perf end value": 173801726081982512
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 51536872323892274,
+                            "Perf end value": 51536872323896930
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 64149597805795581,
+                            "Perf end value": 64149597805904020
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 27183622760446157,
+                            "Perf end value": 27183622760554596
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 173801726082008319,
+                            "Perf end value": 173801726082021885
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 51536872323905758,
+                            "Perf end value": 51536872323910608
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 24,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 30003576656996637,
+                            "Perf end value": 30003576657151801
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 16992204517255697,
+                            "Perf end value": 16992204517410861
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 162536928536123393,
+                            "Perf end value": 162536928536136804
+                        },
+                        {
+                            "Perf Name": "双发射拍数",
+                            "Perf begin value": 34042492786188991,
+                            "Perf end value": 34042492786193647
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 30003576657469296,
+                            "Perf end value": 30003576657604088
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 16992204517728356,
+                            "Perf end value": 16992204517863148
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 162536928536162328,
+                            "Perf end value": 162536928536175742
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 34042492786202475,
+                            "Perf end value": 34042492786207325
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 25,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 54656742915944862,
+                            "Perf end value": 54656742916095237
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 65401888875189391,
+                            "Perf end value": 65401888875339766
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 195614239463846921,
+                            "Perf end value": 195614239463860384
+                        },
+                        {
+                            "Perf Name": "双发射拍数",
+                            "Perf begin value": 30397059207937354,
+                            "Perf end value": 30397059207942010
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 54656742916397059,
+                            "Perf end value": 54656742916552482
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 65401888875641588,
+                            "Perf end value": 65401888875797011
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 195614239463886003,
+                            "Perf end value": 195614239463899469
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 30397059207950838,
+                            "Perf end value": 30397059207955686
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 26,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 42643664916630993,
+                            "Perf end value": 42643664916788263
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 70387559356967661,
+                            "Perf end value": 70387559357124931
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 180205441529151789,
+                            "Perf end value": 180205441529165301
+                        },
+                        {
+                            "Perf Name": "双发射拍数",
+                            "Perf begin value": 28591422309188701,
+                            "Perf end value": 28591422309193357
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 42643664917093185,
+                            "Perf end value": 42643664917238667
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 70387559357429853,
+                            "Perf end value": 70387559357575335
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 180205441529191018,
+                            "Perf end value": 180205441529204533
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 28591422309202185,
+                            "Perf end value": 28591422309207033
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 27,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 71142493783358978,
+                            "Perf end value": 71142493783518327
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 63963472197946680,
+                            "Perf end value": 63963472198106029
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 175736543253045377,
+                            "Perf end value": 175736543253059087
+                        },
+                        {
+                            "Perf Name": "双发射拍数",
+                            "Perf begin value": 70636541453420728,
+                            "Perf end value": 70636541453425384
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 71142493783840537,
+                            "Perf end value": 71142493783966971
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 63963472198428239,
+                            "Perf end value": 63963472198554673
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 175736543253085203,
+                            "Perf end value": 175736543253098916
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 70636541453434212,
+                            "Perf end value": 70636541453439062
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 28,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 63780960845501137,
+                            "Perf end value": 63780960845664957
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 35341042006168241,
+                            "Perf end value": 35341042006332061
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 159071722310327512,
+                            "Perf end value": 159071722310341026
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 11803914484641617,
+                            "Perf end value": 11803914484646273
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 63780960845982489,
+                            "Perf end value": 63780960846108350
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 35341042006649593,
+                            "Perf end value": 35341042006775454
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 159071722310366747,
+                            "Perf end value": 159071722310380264
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 11803914484655101,
+                            "Perf end value": 11803914484659950
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 29,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 12108013728757863,
+                            "Perf end value": 12108013728917640
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 35257292919200452,
+                            "Perf end value": 35257292919360229
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 152997057849806550,
+                            "Perf end value": 152997057849819701
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 63570821152703463,
+                            "Perf end value": 63570821152708119
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 12108013729239112,
+                            "Perf end value": 12108013729364401
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 35257292919681701,
+                            "Perf end value": 35257292919806990
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 152997057849844696,
+                            "Perf end value": 152997057849857850
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 63570821152716947,
+                            "Perf end value": 63570821152721797
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 30,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 1748703971672984,
+                            "Perf end value": 1748703971820154
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 31534329675626175,
+                            "Perf end value": 31534329675773345
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 163554864284775902,
+                            "Perf end value": 163554864284788213
+                        },
+                        {
+                            "Perf Name": "双发射拍数",
+                            "Perf begin value": 41234670119752298,
+                            "Perf end value": 41234670119756815
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 1748703972126033,
+                            "Perf end value": 1748703972271617
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 31534329676079224,
+                            "Perf end value": 31534329676224808
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 163554864284811528,
+                            "Perf end value": 163554864284823842
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 41234670119765365,
+                            "Perf end value": 41234670119770074
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Slave_Core_id": 31,
+            "function": [
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 5,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 54799313322890290,
+                            "Perf end value": 54799313323052762
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 27892199017748588,
+                            "Perf end value": 27892199017911060
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 215944373470619936,
+                            "Perf end value": 215944373470633548
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 58498004584157874,
+                            "Perf end value": 58498004584162530
+                        }
+                    ]
+                },
+                {
+                    "Kernel Name": "empty",
+                    "Kernel Line": 14,
+                    "data": [
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 54799313323371282,
+                            "Perf end value": 54799313323496859
+                        },
+                        {
+                            "Perf Name": "节拍计数器",
+                            "Perf begin value": 27892199018229580,
+                            "Perf end value": 27892199018355157
+                        },
+                        {
+                            "Perf Name": "发射指令数",
+                            "Perf begin value": 215944373470659471,
+                            "Perf end value": 215944373470673086
+                        },
+                        {
+                            "Perf Name": "L1IC访问次数",
+                            "Perf begin value": 58498004584171358,
+                            "Perf end value": 58498004584176208
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        },
+                        {
+                            "Perf Name": "周期计数器",
+                            "Perf begin value": 0,
+                            "Perf end value": 0
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
