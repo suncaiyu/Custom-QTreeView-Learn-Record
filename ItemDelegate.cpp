@@ -9,6 +9,9 @@
 #include <QDebug>
 #include <QTextDocument>
 #include <QLineEdit>
+#include <QApplication>
+#include <QCheckBox>
+
 
 namespace {
     constexpr int IDENT = 20;
@@ -22,7 +25,7 @@ namespace {
 ItemDelegate::ItemDelegate(QTreeView *view, QObject * parent)
     : m_View(view), QStyledItemDelegate(parent)
 {
-    setQss();
+//    setQss();
 //    m_View->setIndentation(0);
 //    m_View->setEditTriggers(QAbstractItemView::NoEditTriggers);
     m_View->setUniformRowHeights(false);
@@ -58,8 +61,20 @@ void ItemDelegate::paint(QPainter * painter, const QStyleOptionViewItem & option
             painter->drawText(op.rect.adjusted(5, 0, 0, -5), Qt::TextWrapAnywhere | Qt::AlignVCenter, index.data(Qt::DisplayRole).value<QString>());
         } else
         if (index.column() == 3) {
-            m_View->openPersistentEditor(index);
-            QStyledItemDelegate::paint(painter, op, index);
+            if (item->data(index.column()).canConvert<QCheckBox *>()) {
+                QCheckBox *checkBox = qvariant_cast<QCheckBox*>(item->data(index.column()));
+                QStyleOptionButton checkBoxOption;
+                checkBoxOption.state |= checkBox->isChecked() ? QStyle::State_On : QStyle::State_Off;
+                if (checkBox->isDown()) {
+                    checkBoxOption.state |= QStyle::State_MouseOver;
+                }
+                checkBoxOption.rect = option.rect;
+                int xOffset = (option.rect.width() - QApplication::style()->pixelMetric(QStyle::PM_IndicatorWidth)) / 2;
+                checkBoxOption.rect.adjust(xOffset, 0, xOffset, 0);
+                QApplication::style()->drawControl(QStyle::CE_CheckBox, &checkBoxOption, painter);
+            }
+//            m_View->openPersistentEditor(index);
+//            QStyledItemDelegate::paint(painter, op, index);
         } else {
             QStyledItemDelegate::paint(painter, op, index);
         }
@@ -108,18 +123,40 @@ QSize ItemDelegate::sizeHint(const QStyleOptionViewItem & option, const QModelIn
 bool ItemDelegate::editorEvent(QEvent * event, QAbstractItemModel * model, const QStyleOptionViewItem & option, const QModelIndex & index)
 {
     Q_UNUSED(model)
-    if (index.column() != 1) {
-        return false;
-    }
+    //    if (index.column() != 1) {
+    //        return false;
+    //    }
     TreeItem *item = index.data(Qt::UserRole).value<TreeItem *>();
-    int ident = item->level() * IDENT;
-    QRect hotArea(option.rect.x(), option.rect.y(), ident, option.rect.height());
     QMouseEvent *mEvent = static_cast<QMouseEvent *>(event);
-    if (mEvent->type() == QEvent::MouseButtonPress && hotArea.contains(mEvent->pos())) {
-        m_View->setExpanded(index.siblingAtColumn(0), !m_View->isExpanded(index.siblingAtColumn(0)));
-        return true;
+    if (index.column() == 1) {
+        int ident = item->level() * IDENT;
+        QRect hotArea(option.rect.x(), option.rect.y(), ident, option.rect.height());
+        if (mEvent->type() == QEvent::MouseButtonPress && hotArea.contains(mEvent->pos())) {
+            m_View->setExpanded(index.siblingAtColumn(0), !m_View->isExpanded(index.siblingAtColumn(0)));
+            return true;
+        }
     }
-    return false;
+    if (item->data(index.column()).canConvert<QCheckBox *>()) {
+        QCheckBox *checkBox = qvariant_cast<QCheckBox*>(item->data(index.column()));
+        QRect checkBoxRect = option.rect;
+        int xOffset = (option.rect.width() - QApplication::style()->pixelMetric(QStyle::PM_IndicatorWidth)) / 2;
+        int yOffset = (option.rect.height() - QApplication::style()->pixelMetric(QStyle::PM_IndicatorHeight)) / 2;
+        checkBoxRect.adjust(xOffset, yOffset, xOffset, yOffset);
+        checkBoxRect = QRect(checkBoxRect.x(), checkBoxRect.y(), checkBoxRect.height(), checkBoxRect.height());
+        if (event->type() == QEvent::MouseButtonRelease && checkBoxRect.contains(mEvent->pos())) {
+            checkBox->setChecked(!checkBox->isChecked());
+            return true;
+        }
+        if (event->type() == QEvent::MouseMove && checkBoxRect.contains(mEvent->pos())) {
+            checkBox->setDown(true);
+            return true;
+        }
+        if (event->type() == QEvent::MouseMove && !checkBoxRect.contains(mEvent->pos())) {
+            checkBox->setDown(false);
+            return true;
+        }
+    }
+    return QStyledItemDelegate::editorEvent(event, model, option, index);
 }
 
 QWidget * ItemDelegate::createEditor(QWidget * parent, const QStyleOptionViewItem & option, const QModelIndex & index) const
@@ -133,9 +170,9 @@ QWidget * ItemDelegate::createEditor(QWidget * parent, const QStyleOptionViewIte
     QPushButton *b = new QPushButton("777", parent);
     connect(b, &QPushButton::clicked, this, [b,this, option, index]() {
         for (int i = 0; i <= index.column(); i++) {
-            // 提醒界面数据刷新了，重新从sizehint获取size大小
+            // ���ѽ�������ˢ���ˣ����´�sizehint��ȡsize��С
             const_cast<QAbstractItemModel*>(index.model())->dataChanged(index, index);
-            // 界面刷新
+            // ����ˢ��
             m_View->doItemsLayout();
 //            m_View->viewport()->update();
         }
@@ -161,13 +198,13 @@ void ItemDelegate::DrawTriangle(QPainter * painter, const QStyleOptionViewItem &
     QPointF triangle[3];
     QModelIndex idx = index.siblingAtColumn(0);
     if (m_View->isExpanded(idx)) {
-        // ↓
+        // ��
         triangle[0] = QPointF(option.rect.x() - PADDING, option.rect.y() + option.rect.height() / 2.0 - PADDING);
         triangle[1] = QPointF(triangle[0].x() - TRIANGLE_WIDTH * 2.0, triangle[0].y());
         triangle[2] = QPointF((triangle[0].x() + triangle[1].x()) / 2.0, triangle[0].y() + TRIANGLE_WIDTH);
     }
     else {
-        // →
+        // ��
         triangle[0] = QPointF(option.rect.x() - PADDING, option.rect.y() + option.rect.height() / 2.0);
         triangle[1] = QPointF(triangle[0].x() - TRIANGLE_WIDTH, triangle[0].y() - TRIANGLE_WIDTH);
         triangle[2] = QPointF(triangle[1].x(), triangle[0].y() + TRIANGLE_WIDTH);
@@ -223,7 +260,7 @@ void ItemDelegate::DrawKeyword(QPainter *painter,
             }
             QRect rc = option.rect.adjusted(ident, 0, 0, 0);
             painter->drawText(option.rect.adjusted(ident, 0, 0, 0), Qt::AlignVCenter, list[i]);
-            ident += fm.width(list[i]);
+            ident += fm.horizontalAdvance(list[i]);
         } else {
             if (option.state.testFlag(QStyle::State_Selected)) {
                 p.setColor(option.palette.highlightedText().color());
@@ -237,7 +274,7 @@ void ItemDelegate::DrawKeyword(QPainter *painter,
                 return;
             }
             painter->drawText(option.rect.adjusted(ident, 0, 0, 0), Qt::AlignVCenter, list[i]);
-            ident += fm.width(list[i]);
+            ident += fm.horizontalAdvance(list[i]);
         }
         painter->restore();
     }

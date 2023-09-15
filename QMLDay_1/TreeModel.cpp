@@ -55,17 +55,17 @@ TreeItem *TreeModel::root()
     return mRootItem;
 }
 
-//QVariant TreeModel::headerData(int section, Qt::Orientation orientation, int role) const
-//{
-//    if (orientation == Qt::Horizontal)
-//    {
-//        if (role == Qt::DisplayRole)
-//        {
-//            return mHeaders.at(section);
-//        }
-//    }
-//    return QVariant();
-//}
+QVariant TreeModel::headerData(int section, Qt::Orientation orientation, int role) const
+{
+    if (orientation == Qt::Horizontal)
+    {
+        if (role == Qt::DisplayRole)
+        {
+            return mHeaders.at(section);
+        }
+    }
+    return QVariant();
+}
 
 QVariant TreeModel::data(const QModelIndex &index, int role) const
 {

@@ -1,6 +1,16 @@
 ﻿#ifndef TREEHEAD_H
 #define TREEHEAD_H
 #include <QHeaderView>
+#include <QProxyStyle>
+class CheckBoxStyle : public QProxyStyle {
+public:
+    CheckBoxStyle(QStyle *style) : QProxyStyle(style){
+
+    }
+
+protected:
+    QRect subElementRect(QStyle::SubElement element, const QStyleOption *option, const QWidget *widget) const override;
+};
 
 class TreeHead : public QHeaderView
 {

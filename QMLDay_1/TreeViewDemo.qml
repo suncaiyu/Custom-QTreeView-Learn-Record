@@ -3,6 +3,7 @@ import QtQuick.Window 2.12
 import QtQuick.Controls 2.5
 import QtQuick;
 import CreateModel 1.0
+import QtQuick.Controls
 import QtQuick.Templates as T;
 Window {
     id :win
@@ -52,10 +53,62 @@ Window {
     TreeView {
         id:treeview
         anchors.fill: parent
-        // The model needs to be a QAbstractItemModel
-        // model: yourTreeModel
+        width:parent.width
+        height:parent.height - 30
+        clip:true
+
         model:cm.model
-//        delegate:TreeViewDelegate{}
+//        model:
+//            ListModel {
+//                id: fruitModel
+
+//                ListElement {
+//                    display: "Apple"
+//                    cost: 2.45
+//                }
+//                ListElement {
+//                    display: "Orange"
+//                    cost: 3.25
+//                }
+//                ListElement {
+//                    display: "Banana"
+//                    cost: 1.95
+//                }
+//            }
+
+//                delegate:TreeViewDelegate{}
         delegate: MyTreeDelegate{}
+
+        property int hoverRow: -1
+        property int selectedRow: -1
+        property color selectedColor: "#46b2b5"
+        onSelectedRowChanged:{
+            seq.running
+        }
+
+
+        Behavior on selectedRow {
+            //            NumberAnimation{
+            //                duration:2000
+            //            }
+            SequentialAnimation {
+                id :seq
+                ColorAnimation{
+                    target: treeview
+                    property:"selectedColor"
+                    from: "#46b2b5"
+                    to: "white"
+                    duration: 200
+                }
+
+                ColorAnimation{
+                    target: treeview
+                    property:"selectedColor"
+                    from: "white"
+                    to: "#46b2b5"
+                    duration: 200
+                }
+            }
+        }
     }
 }

@@ -61,12 +61,17 @@ QVariant TreeModel::headerData(int section, Qt::Orientation orientation, int rol
     }
     return QVariant();
 }
+#include <QCheckBox>
 
 QVariant TreeModel::data(const QModelIndex &index, int role) const
 {
+
     if (!index.isValid()) {
         return QVariant();
     }
+//    if (index.column() == 3) {
+//        return QVariant::fromValue(new QCheckBox());
+//    }
     TreeItem *item = static_cast<TreeItem *>(index.internalPointer());
     if (role == Qt::UserRole) {
         return QVariant::fromValue<TreeItem *>(item);
@@ -77,6 +82,10 @@ QVariant TreeModel::data(const QModelIndex &index, int role) const
         }
     //TreeItem *item = static_cast<TreeItem*>(index.internalPointer());
     else if (role == Qt::DisplayRole) {
+        QVariant it = item->data(index.column());
+        if (qvariant_cast<QCheckBox *>(it)) {
+            return it;
+        }
         return item->data(index.column());
     }
     else if (role == Qt::EditRole)
@@ -139,7 +148,7 @@ bool TreeModel::setData(const QModelIndex &index, const QVariant &value, int rol
 Qt::ItemFlags TreeModel::flags(const QModelIndex &index) const
 {
     if (!index.isValid())
-        return 0;
+        return Qt::NoItemFlags;
     ////节点是否允许编辑
     Qt::ItemFlags flags = QAbstractItemModel::flags(index);
     flags |= Qt::ItemIsEditable;
@@ -248,7 +257,7 @@ bool MyFilterModel::filterAcceptsRow(int source_row, const QModelIndex & source_
 
     //>只支持搜索第一层，但是要展示符合节点的全部子节点
     // 方案循环遍历，但是比较的是他们的第一层父节点
-    QString str = this->filterRegExp().pattern();
+    QString str = this->filterRegularExpression().pattern();
     // 假设搜索第一列
     TreeItem *it = source_parent.data(Qt::UserRole).value<TreeItem *>();
     if (it == nullptr) {

@@ -5,12 +5,14 @@
 #include "TreeModel.h"
 #include "ItemDelegate.h"
 #include <TreeHead.h>
+#include <QCheckBox>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
       , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    ui->treeView_2->hide();
 }
 
 MainWindow::~MainWindow()
@@ -27,14 +29,14 @@ void MainWindow::on_pushButton_clicked()
     mModel = new TreeModel(headList, ui->treeView);
     TreeItem *root = mModel->root();
     // 1
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 100; i++) {
         TreeItem *item1 = new TreeItem(root);
         QVector<QVariant> data1;
-        data1 << i << "api" + QString::number(i) << "firstapiapiapiapiapiapiapi" + QString::number(i) << "";
+        data1 << i << "api" + QString::number(i) << "firstapiapiapiapiapiapiapi" + QString::number(i) << QVariant::fromValue(new QCheckBox());
         item1->setItemData(data1);
         root->appendChild(item1);
 
-        for (int j = 0; j < 10; j++) {
+        for (int j = 0; j < 100; j++) {
             TreeItem *item2 = new TreeItem(item1);
             QVector<QVariant> data2;
             data2 << j << "myapi" + QString::number(i + j) << "secondapiapiapiapiapiapiapi" + QString::number(i + j) << "";
@@ -43,7 +45,7 @@ void MainWindow::on_pushButton_clicked()
             if (selected == nullptr && j == 8) {
                 selected = item2;
             }
-            for (int k = 0; k < 10; k++) {
+            for (int k = 0; k < 100; k++) {
                 TreeItem *item3 = new TreeItem(item2);
                 QVector<QVariant> data3;
                 data3 << k << "myapi" + QString::number(i + j) << "thirdapiapiapiapiapiapiapi" + QString::number(i + j + k) << "";
@@ -55,6 +57,7 @@ void MainWindow::on_pushButton_clicked()
     mFilterModel = new MyFilterModel(ui->treeView);
     mFilterModel->setSourceModel(mModel);
     mFilterModel->setFilterKeyColumn(1);
+    // 先准备完数据在setModel会比较快，反了每次添加数据都会反映到界面上，无效工作太多，很慢。
     ui->treeView_2->setModel(mFilterModel);
     ui->treeView->setModel(mModel);
     mDelegate = new ItemDelegate(ui->treeView);
@@ -62,6 +65,7 @@ void MainWindow::on_pushButton_clicked()
     ui->treeView->setItemDelegate(mDelegate);
     ui->treeView_2->setItemDelegate(mFilterDelegate);
     ui->treeView_2->setWordWrap(true);
+    ui->treeView->setStyle(new CheckBoxStyle(ui->treeView->style()));
 }
 
 
@@ -75,7 +79,8 @@ void MainWindow::on_pushButton_2_clicked()
 void MainWindow::on_lineEdit_returnPressed()
 {
     QString text = ui->lineEdit->text();
-    mFilterModel->setFilterRegExp(text);
+//    mFilterModel->setFilterRegExp(text);
+    mFilterModel->setFilterRegularExpression(text);
     // 这里因为模拟设了持久化代理显示按钮
     // 如果不进行下面的操作的话，createEditor不更新
     // 给按钮绑定的index就没更新，所以会导致index越界，找的不准等问题

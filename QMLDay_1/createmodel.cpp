@@ -2,10 +2,10 @@
 #include <QDebug>
 CreateModel::CreateModel()
 {
-InitModel();
+    initModel();
 }
 
-void CreateModel::InitModel()
+void CreateModel::initModel()
 {
     QStringList headList;
     headList << "ID" << "API" << "DUR(us)" << "Button";
@@ -34,4 +34,9 @@ void CreateModel::InitModel()
         }
     }
     qDebug() << "done";
+}
+
+QString CreateModel::getHeaderString(int column)
+{
+    return mModel->headerData(column, Qt::Horizontal).toString();
 }
